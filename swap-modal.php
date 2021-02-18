@@ -34,7 +34,7 @@
 
 <?php
 
-$sql = "SELECT * FROM stock_part";
+$sql = "SELECT * FROM sb_stock_part";
 $result = $conn->query($sql);
 
 

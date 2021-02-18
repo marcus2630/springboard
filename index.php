@@ -1,3 +1,4 @@
+<?php require_once('connect.php');?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -31,7 +32,7 @@
 
 
           <?php
-            $sql = "SELECT status_msg, status_type FROM status_msg ORDER BY status_id DESC LIMIT 1";
+            $sql = "SELECT status_msg, status_type FROM sb_status_msg ORDER BY status_id DESC LIMIT 1";
             $result = $conn->query($sql);
             while($row = $result->fetch_assoc()) {
           ?>

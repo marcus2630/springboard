@@ -10,13 +10,12 @@ if(isset($_GET["post"])) {
 	} else echo("errorz");
 
 	$sql = "
-	INSERT INTO status_msg
+	INSERT INTO sb_status_msg
 	VALUES ('', '$msg', '$type')
 	";
 
 	if($pin == "1337") {
 		mysqli_query($conn, $sql);
-		mysqli_close($conn);
 	}
 	
 	mysqli_close($conn);
